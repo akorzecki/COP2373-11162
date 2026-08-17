@@ -1,0 +1,27 @@
+When submitting programming exercises, please make sure to do the following or points will be deducted:
+
+Name the file using this format - YourName_ProgrammingExericse_#.py - you must do this so I don't have issues when putting your files in PyCharm for me to test. 
+All code should be in functions. 
+***This is optional*** In your code, you must create docstrings (click here for an exampleDownload click here for an example - it is the wording between the '''  ''') which lists the following for each function:
+brief description of the function
+the parameters the function takes in (if any) and their data type
+the variables used in the function and their data type
+the logical steps of the function
+the return (if any). 
+***This is optional*** In your code, you must call your functions using the following code (if you are doing step 3):
+    if __name__ == "__main__":
+
+        # You would update these functions to be your functions in your assignment:
+
+        write_sales_to_file()
+
+        read_and_total_sales()
+
+Put line spacing between sections of code. 
+Comment your code and please put comments above your lines of code (not after). Your comments should explain why the code is doing something. 
+Please use proper grammar, spelling and punctuation when prompting and displaying to users. 
+All programming exercises will be accompanied by a word document file to resemble a technical design document. If you are doing steps 3 & 4, you will create this after writing your code so you can use the docstrings in your code to create the .txt file which you will then copy from into a word document and this will be your technical design document. Click here for more details.
+In the technical design document, add a screenshot of your output from running your code. There should be no errors in your output. Any errors should be fixed before submitting. Click hereDownload here
+ for an example. 
+All programming exercises should be in your repository along with the technical design document. Upload the technical design document manually to your repository. 
+(This list is subject to change as time goes on. I will make an announcement if it changes). 
