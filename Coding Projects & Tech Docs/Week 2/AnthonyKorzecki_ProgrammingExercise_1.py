@@ -102,7 +102,7 @@ def postsale_ticket_status():
         None
     """
     # creating the accumulator variables
-    tickets_left = 20  # accumulator 1
+    tickets_left = 10  # accumulator 1
     customer_count = 0  # accumulator 2
 
     # while loop runs while there are still tickets.
