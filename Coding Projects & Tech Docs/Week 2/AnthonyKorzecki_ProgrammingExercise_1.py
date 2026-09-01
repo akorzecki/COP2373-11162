@@ -72,10 +72,10 @@ def postsale_ticket_status():
         None
 
     Variables:
-        tickets_left (int): Accumulator to count the number of
+        tickets_remaining (int): Accumulator to count the number of
         tickets that are left to be sold.
 
-        customer_count (int): Accumulator that counts the number of customers
+        customer_num (int): Accumulator that counts the number of customers
         (transactions) that have taken place.
 
         new_ticket_count (int): Temporary storage variable used to store the
@@ -90,7 +90,7 @@ def postsale_ticket_status():
         4. Compare the temp storage variable with the tickets_left accumulator
         to ensure that there was a transaction
         (that the ticket count decreased by at least 1)
-        5. Increase the customer_count accumulator by 1 to mark a new customer
+        5. Increase the customer_num accumulator by 1 to mark a new customer
         6. Set the "true" ticket_count accumulator to the value of
         new_ticket_count to ensure the count is up-to-date
         7. If there are more than 0 tickets left, display a message to tell the
@@ -102,30 +102,30 @@ def postsale_ticket_status():
         None
     """
     # creating the accumulator variables
-    tickets_left = 10  # accumulator 1
-    customer_count = 0  # accumulator 2
+    tickets_remaining = 10  # accumulator 1
+    customer_num = 0  # accumulator 2
 
     # while loop runs while there are still tickets.
     # if not, it stops and the end message displays.
-    while tickets_left > 0:
+    while tickets_remaining > 0:
         # running the ask_for_tickets function to get ticket sales from user
         # and assigning the parameter of that function to a new variable for
         # boolean and math operations later.
-        new_ticket_count = ask_for_tickets(tickets_left)
+        new_ticket_count = ask_for_tickets(tickets_remaining)
         # nested if function runs only if there is a difference between the
         # tickets left previously and the most recent ticket count
         # generated from the ask_for_tickets function.
-        if new_ticket_count < tickets_left:
+        if new_ticket_count < tickets_remaining:
             # since we know at least 1 ticket has been sold,
             # we can safely update the customer accumulator.
-            customer_count += 1
-            # updating the main tickets_left accumulator
+            customer_num += 1
+            # updating the main tickets_remaining accumulator
             # to reflect the new ticket availability.
-            tickets_left = new_ticket_count
+            tickets_remaining = new_ticket_count
             # balance statement only runs if there are tickets remaining,
             # so that a balance of "0 tickets remaining" never shows.
-            if tickets_left > 0:
-                print(f"There are {tickets_left} tickets remaining!")
+            if tickets_remaining > 0:
+                print(f"There are {tickets_remaining} tickets remaining!")
     # this could've been in an else statement, but that would be redundant.
     # once the while loop stops, there must be 0 tickets remaining,
     # meaning we can display the end message w/ customer count.
