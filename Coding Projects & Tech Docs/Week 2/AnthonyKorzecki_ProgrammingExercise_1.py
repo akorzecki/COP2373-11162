@@ -35,8 +35,8 @@ def ask_for_tickets(remaining_ticketcount):
     # This is necessary to keep track of the active transaction.
     requested_tickets = int(
         input(
-            "Hello! How many tickets would you like to buy? "
-            "You can purchase anywhere from 1-4 tickets at a time. "
+            "Please buy some tickets. We haven't made a sale in weeks."
+            "We have ten tickets left, and we let you buy 1-4 at a time."
         )
     )
     # checking to make sure the user is buying between 1-4 tickets,
